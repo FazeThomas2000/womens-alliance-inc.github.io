@@ -507,6 +507,8 @@ nav {
   margin: auto;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .footer__content {
@@ -708,6 +710,11 @@ h4 {
     .bourbon__grid {
       gap: 3rem;
     }
+
+    .footer__container {
+      flex-direction: row;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  }
 }
 
 @media (width > 1024) {
