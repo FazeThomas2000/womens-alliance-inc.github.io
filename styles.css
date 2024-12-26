@@ -249,7 +249,7 @@ nav {
   
   .people__content h1 {
     margin-bottom: 2rem;
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--text-dark);
     text-align: center;
   }
@@ -390,7 +390,7 @@ nav {
   
   .hats__content h4 {
     margin-bottom: 2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: var(--text-dark);
   }
