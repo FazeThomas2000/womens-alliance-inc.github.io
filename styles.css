@@ -327,21 +327,16 @@ nav {
   }
   
   .people__image img:nth-child(3) {
-    grid-area: 1/5/6/3;
+    grid-area: 2/3/6/6;
   }
 
   .people__image img:nth-child(4) {
-    grid-area: 6/3/10/12;
+    grid-area: 9/3/6/6;
   }
 
-  .people__image img:nth-child(5) {
-    grid-area: 7/1/10/3;
+   .people__image img:nth-child(5) {
+    grid-area: 7/1/9/3;
   }
-
-  .people__image img:nth-child(6) {
-    grid-area: 1/5/6/12;
-  }
-  
 
   .scholarship__container {
     position: relative;
@@ -512,11 +507,11 @@ nav {
 }
 
 .footer__content {
-  width: 100;
+  width: 100%;
 }
   
 .footer__content h4 {
-  font-size: 28px;
+  font-size: 20px;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -524,7 +519,7 @@ nav {
 .footer__content p {
   width:190px;
   margin: auto;
-  padding: 7px;
+  padding: 6px;
 }
 
 .footer__content ul {
@@ -653,6 +648,14 @@ nav {
       grid-area: 1/2/2/3;
     }
 
+    .people__container {
+      padding-top: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      isolation: isolate;
+    }
+  
+
     .people__content {
       position: relative;
       padding-bottom: 10rem;
@@ -672,7 +675,6 @@ nav {
       backdrop-filter: blur(5px);
       z-index: 10;
     }
-  
 
     .scholarship__container {
       grid-template-columns:
