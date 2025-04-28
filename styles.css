@@ -37,6 +37,12 @@
   line-height: 1.75rem;
 }
 
+.sectioned__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
 .sectioned__header {
   position: relative;
   isolation: isolate;
@@ -81,7 +87,7 @@ ul {
     list-style: none;
 }
 
-html, 
+html,
 body {
     scroll-behavior: smooth;
 }
@@ -148,29 +154,29 @@ nav {
     display: grid;
     overflow: hidden;
   }
-  
+
   .header__image {
     grid-area: 1/1/2/2;
   }
-  
+
   .header__image img {
     max-width: 900px;
     margin-left: auto;
   }
-  
+
   .header__content {
     grid-area: 1/1/2/2;
     display: flex;
     align-items: center;
   }
-  
+
   .header__content > div {
     max-width: 500px;
     padding: 4rem 1rem;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
   }
-  
+
   .header__content h1 {
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -178,7 +184,7 @@ nav {
     font-family: var(--header-font);
     color: var(--primary-color);
   }
-  
+
   .header__content p {
     font-size: 1rem;
     color: var(--text-light);
@@ -189,11 +195,11 @@ nav {
     flex-direction: column;
     gap: 2rem;
   }
-  
+
   .about__header .section__description {
     max-width: 600px;
   }
-  
+
   .about__btn {
     width: fit-content;
     padding: 0.75rem 1.5rem;
@@ -207,36 +213,36 @@ nav {
     transition: 0.3s;
     cursor: pointer;
   }
-  
+
   .about__content {
     margin-top: 2rem;
     display: grid;
     gap: 2rem;
   }
-  
+
   .about__grid {
     display: grid;
     gap: 2rem;
   }
-  
+
   .about__image {
     overflow: hidden;
   }
-  
+
   .about__card h3 {
     margin-bottom: 0.5rem;
     font-size: 2.5rem;
     font-weight: 600;
     color: var(--primary-color);
   }
-  
+
   .about__card h4 {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--primary-color);
   }
-  
+
   .about__card p {
     color: var(--text-light);
   }
@@ -246,19 +252,19 @@ nav {
     gap: 2rem;
     overflow: hidden;
   }
-  
+
   .people__content h1 {
     margin-bottom: 2rem;
     font-size: 3rem;
     color: var(--text-dark);
     text-align: center;
   }
-  
+
   .people__content h1 span {
     text-decoration: underline;
     text-decoration-color: var(--primary-color);
   }
-  
+
   .people__content .people__description {
     text-align: center;
   }
@@ -276,13 +282,13 @@ nav {
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.2);
   }
-  
+
   .people__content label {
     font-size: 1.1rem;
     font-weight: 500;
     color: var(--text-dark);
   }
-  
+
   .people__content input {
     width: 100%;
     outline: none;
@@ -291,17 +297,17 @@ nav {
     background-color: transparent;
     color: var(--text-light);
   }
-  
+
   .people__content input::placeholder {
     color: var(--text-light);
   }
-  
+
   .people__content .btn {
     padding: 13px 15px;
     font-size: 1.75rem;
     border-radius: 1rem;
   }
-  
+
   .people__image {
     position: relative;
     isolation: isolate;
@@ -310,22 +316,22 @@ nav {
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: 90px;
   }
-  
+
   .people__image img {
     height: 100%;
     object-fit: cover;
     border-radius: 1rem;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   }
-  
+
   .people__image img:nth-child(1) {
     grid-area: 1/1/4/3;
   }
-  
+
   .people__image img:nth-child(2) {
     grid-area: 4/1/7/3;
   }
-  
+
   .people__image img:nth-child(3) {
     grid-area: 2/3/6/6;
   }
@@ -344,11 +350,11 @@ nav {
     display: grid;
     overflow: hidden;
   }
-  
+
   .scholarship__content {
     padding: 5rem 1rem;
   }
-  
+
   .scholarship__content::before {
     position: absolute;
     content: "";
@@ -357,23 +363,69 @@ nav {
     inset: 0;
     z-index: -1;
   }
-  
+
   .scholarship__content .sectioned__header {
     margin-bottom: 1rem;
     color: var(--white);
   }
-  
+
   .scholarship__content .sectioned__header::before {
     content: "scholarship";
     color: rgba(255, 255, 255, 0.2);
   }
-  
+
   .scholarship__content p {
     color: var(--white);
   }
-  
+
   .scholarship__content p:not(:last-child) {
     margin-bottom: 1rem;
+  }
+
+  .award__container {
+    overflow: hidden;
+    margin-bottom: 4rem;
+  }
+
+  .award__container .sectioned__header::before {
+    content: "2025 Awards";
+  }
+
+  .award__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 4rem 1rem;
+  }
+
+  .award__card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .award__card h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+  }
+
+  .award__card h3 {
+    font-size: 1.25rem;
+    font-weight: 650;
+    color: var(--text-dark);
+    text-align: center;
+  }
+
+  .award__card p {
+    font-weight: 500;
+    color: var(--text-light);
+    text-align: center;
   }
 
   .hats__container {
@@ -381,25 +433,25 @@ nav {
     gap: 2rem;
     overflow: hidden;
   }
-  
+
   .hats__image img {
     max-width: 400px;
     margin-inline: auto;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   }
-  
+
   .hats__content h4 {
     margin-bottom: 2rem;
     font-size: 2.5rem;
     font-weight: 600;
     color: var(--text-dark);
   }
-  
+
   .hats__content p {
     margin-bottom: 1rem;
     color: var(--text-light);
   }
-  
+
   .hats__content .btn {
     width: 100%;
     margin-top: 2rem;
@@ -416,7 +468,7 @@ nav {
   .donate {
     background-color: var(--extra-light);
   }
-  
+
   .donate__container {
     display: grid;
     gap: 2rem;
@@ -436,7 +488,7 @@ nav {
     transition: 0.3s;
     cursor: pointer;
   }
-  
+
   .donate__image img {
     max-width: 350px;
     margin: auto;
@@ -447,17 +499,17 @@ nav {
     display: grid;
     gap: 2rem;
   }
-  
+
   .bourbon__image {
     position: relative;
     isolation: isolate;
   }
-  
+
   .bourbon__image img {
     max-width: 500px;
     margin: auto;
   }
-  
+
   .about__image .about__bg {
     position: absolute;
     right: 2rem;
@@ -466,7 +518,7 @@ nav {
     z-index: -1;
     opacity: 0.5;
   }
-  
+
   .bourbon__grid {
     margin-top: 2rem;
     display: grid;
@@ -486,7 +538,7 @@ nav {
     transition: 0.3s;
     cursor: pointer;
   }
-  
+
   .a__card p {
     color: var(--text-light);
   }
@@ -509,7 +561,7 @@ nav {
 .footer__content {
   width: 100%;
 }
-  
+
 .footer__content h4 {
   font-size: 20px;
   margin-bottom: 15px;
@@ -529,7 +581,7 @@ nav {
 .social__icons {
   display: flex;
   justify-content: center;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .social__icons li{
@@ -559,7 +611,7 @@ nav {
 }
 
   @media (width > 540px) {
-  
+
     .about__grid {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -567,6 +619,10 @@ nav {
     .hats__container {
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
+    }
+
+    .award__grid {
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .footer__container {
@@ -586,7 +642,7 @@ nav {
   }
   }
 
-  
+
 @media (width > 768px) {
     nav {
       position: static;
@@ -596,21 +652,21 @@ nav {
       justify-content: space-between;
       gap: 2rem;
     }
-  
+
     .nav__header {
       flex: 1;
       padding: 0;
       background-color: transparent;
     }
-  
+
     .nav__menu__btn {
       display: none;
     }
-  
+
     .nav__logo .logo {
       color: var(--primary-color);
     }
-  
+
     .nav__links {
       position: static;
       padding: 0;
@@ -620,15 +676,15 @@ nav {
       background-color: transparent;
       transform: none;
     }
-  
+
     .nav__links a {
       color: var(--text-dark);
     }
-  
+
     .nav__links a:hover {
       color: var(--primary-color);
     }
-  
+
     .header__container {
       padding-top: 0;
     }
@@ -638,12 +694,12 @@ nav {
       align-items: center;
       justify-content: space-between;
     }
-  
+
     .about__content {
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
     }
-  
+
     .about__image {
       grid-area: 1/2/2/3;
     }
@@ -654,17 +710,17 @@ nav {
       align-items: center;
       isolation: isolate;
     }
-  
+
 
     .people__content {
       position: relative;
       padding-bottom: 10rem;
     }
-  
+
     .people__content :is(h1, .people__description) {
       text-align: left;
     }
-  
+
     .people__content form {
       position: absolute;
       width: max-content;
@@ -683,30 +739,34 @@ nav {
         minmax(0, calc(var(--max-width) / 2))
         minmax(0, 1fr);
     }
-  
+
     .scholarship__image {
       grid-area: 1/1/2/3;
     }
-  
+
     .scholarship__image img {
       height: 100%;
       object-fit: cover;
       border-top-right-radius: 8rem;
       border-bottom-right-radius: 8rem;
     }
-  
+
     .scholarship__content {
       grid-area: 1/3/2/4;
     }
-  
+
     .scholarship__content::before {
       grid-area: 1/2/2/5;
+    }
+
+    .award__grid {
+      grid-template-columns: repeat(3, 1fr);
     }
 
     .hats__container {
       grid-template-columns: repeat(3, 1fr);
     }
-  
+
     .hats__content {
       grid-column: 2/4;
     }
@@ -716,16 +776,16 @@ nav {
       align-items: center;
       text-align: left;
     }
-  
+
     .donate__image {
       grid-area: 1/2/2/3;
     }
-  
+
     .bourbon__container {
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
     }
-  
+
     .bourbon__grid {
       gap: 3rem;
     }
@@ -751,6 +811,10 @@ nav {
 
   .scholarship__content {
     padding-inline: 4rem 1rem;
+  }
+
+  .award__grid {
+    gap: 4rem 2rem;
   }
 
   .people__image {
