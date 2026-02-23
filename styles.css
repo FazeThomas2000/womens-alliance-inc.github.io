@@ -9,7 +9,7 @@
     --max-width:1200px;
     --header-font: "Merriweather", serif;
     --gradient-1: linear-gradient(to right, #e1b5ee, #b2b4e4, #b3b4e4);
-    --gradient-2: linear-gradient(to right, #eeb5c4, #beb0e1, #7ed6d8);
+    --gradient-2: linear-gradient(to right, #eeb5b5, #e1c2b0, #d87e7e);
 }
 
 *{
@@ -188,6 +188,34 @@ nav {
   .header__content p {
     font-size: 1rem;
     color: var(--text-light);
+  }
+
+  .info__container {
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+  }
+
+  .info__image img {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  .info__content .info__description {
+    margin-block: 1rem;
+  } 
+
+  .info__container__2 {
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+  }
+
+  .info__image__2 {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
   }
 
   .about__header {
@@ -687,6 +715,20 @@ nav {
 
     .header__container {
       padding-top: 0;
+    }
+
+    .info__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    .info__content
+      :is(.info__subheader, .info__header, .info__description) {
+      text-align: left;
+    }
+
+    .info__image__2 {
+      grid-column: 2/3;
     }
 
     .about__header {
