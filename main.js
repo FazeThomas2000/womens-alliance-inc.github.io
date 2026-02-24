@@ -47,6 +47,16 @@ ScrollReveal().reveal(".about__image img", {
     delay: 500,
   });
 
+  const reel = document.querySelector(".gallery__reel .gallery__images");
+
+  const reelContent = Array.from(reel.children);
+
+  reelContent.forEach((item) => {
+    const duplicateNode = item.cloneNode(true);
+    duplicateNode.setAttribute("aria-hidden", true);
+    reel.appendChild(duplicateNode);
+  });
+
   ScrollReveal().reveal(".scholarship__content .section__header", {
     ...scrollRevealOption,
   });
