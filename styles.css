@@ -211,11 +211,39 @@ nav {
     overflow: hidden;
   }
 
+  .info__content__2 .info__description__2 {
+    margin-block: 1rem;
+  }
+
   .info__image__2 {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 
+  }
+
+  .info__container__3 {
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+  }
+
+  .info__content__3 .info__description__3 {
+    margin-block: 1rem;
+  }
+
+  .info__btn {
+    width: fit-content;
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    white-space: nowrap;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
   }
 
   .about__header {
@@ -626,7 +654,7 @@ nav {
   color: #f13030fa;
 }
 .footer__bar {
-  background: #ec2020;
+  background: #921515;
   text-align: center;
   padding: 10px 0;
   margin-top: 50px;
@@ -722,13 +750,14 @@ nav {
       align-items: center;
     }
 
+    .info__container__2 {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
     .info__content
       :is(.info__subheader, .info__header, .info__description) {
       text-align: left;
-    }
-
-    .info__image__2 {
-      grid-column: 2/3;
     }
 
     .about__header {
