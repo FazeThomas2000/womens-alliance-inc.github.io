@@ -523,6 +523,21 @@ nav {
 
   .gallery__container {
     padding-block: 5rem;
+    text-align: center;
+  }
+
+  .gallery__subheader {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-align: center;
+  }
+
+  .gallery__header {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
   }
 
   .gallery__container :is(.gallery__header, .gallery__subheader) {
@@ -562,6 +577,8 @@ nav {
 
   .gallery__reel .gallery__images img {
     max-width: 450px;
+    height: 300px;
+    object-fit: cover;
   }
 
   @keyframes scroll-left {
