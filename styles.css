@@ -232,6 +232,7 @@ nav {
     margin-block: 1rem;
   }
 
+
   .info__btn {
     width: fit-content;
     padding: 0.75rem 1.5rem;
@@ -665,9 +666,9 @@ nav {
     color: var(--text-light);
   }
 
-  footer {
-    background: #962f2f;
-    padding-top: 50px;
+footer {
+  background: #962f2f;
+  padding-top: 50px;
 }
 
 .footer__container {
@@ -934,7 +935,7 @@ nav {
     .footer__container {
       flex-direction: row;
       grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  }
+    }
 
   .footer__content:nth-child(1) {
     grid-column: 4/6;

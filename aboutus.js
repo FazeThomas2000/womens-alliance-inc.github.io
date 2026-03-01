@@ -1,5 +1,5 @@
-const menuBtn = document.querySelector(".menu-btn");
-const navLinks = document.querySelector(".nav-links");
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
 
 menuBtn.addEventListener("click", (e) => {
@@ -19,3 +19,25 @@ const scrollRevealOption = {
   origin: "bottom",
   duration: 1000,
 };
+
+const about = document.querySelector(".about__grid");
+
+about.addEventListener("click", (e) => {
+  const target = e.target;
+  const aboutCard = target.closest(".about__card");
+  if (target.classList.contains("ri-arrow-down-s-line")) {
+    if (aboutCard.classList.contains("active")) {
+      aboutCard.classList.remove("active");
+    } else {
+      Array.from(about.children).forEach((item) => {
+        item.classList.remove("active");
+      });
+      aboutCard.classList.add("active");
+    }
+  }
+});
+
+ScrollReveal().reveal(".about__image img", {
+  ...scrollRevealOption,
+  origin: "left",
+});
