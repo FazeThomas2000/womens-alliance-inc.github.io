@@ -21,7 +21,7 @@
 .section__container {
     max-width: var(--max-width);
     margin: auto;
-    padding: 5rem 1rem;
+    padding: 3rem 1rem;
 }
 
 .section__header {
@@ -103,6 +103,18 @@ nav {
     max-width: var(--max-width);
     margin-inline: auto;
     z-index: 9;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  white-space: nowrap;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .nav__header {
@@ -522,6 +534,67 @@ nav {
     border-radius: 5px;
   }
 
+  .hatsgalore__container {
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+  }
+
+  .hatsgalore__image img {
+    max-width: 400px;
+    margin-inline: auto;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .hatsgalore__content .hatsgalore__subheader{
+    font-size: 1.25rem;
+    color: var(--primary-color);
+  }
+
+  .hatsgalore__content h2 {
+    margin-bottom: 1rem;
+    font-size: 4.75rem;
+    font-weight: 500;
+    line-height: 5.5rem;
+    color: var(--text-dark);
+    text-align: center;
+  }
+
+  .hatsgalore__content p {
+    margin-bottom: 2rem;
+    line-height: 2rem;
+    color: var(--text-light);
+    text-align: center;
+  }
+
+  .hats__ticket__btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1.5rem;
+  }
+
+  .question__container {
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+  }
+
+  .question__image img {
+  max-width: 425px;
+  margin-inline: auto;
+}
+
+.question__list {
+  list-style: none;
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
   .gallery__container {
     padding-block: 5rem;
     text-align: center;
@@ -849,6 +922,33 @@ footer {
       isolation: isolate;
     }
 
+    .hats__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    .hatsgalore__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    .hatsgalore__image {
+      grid-area: 1/2/2/3;
+    }
+
+    .question__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    .question__image {
+      grid-area: 1/2/2/3;
+    }
+
+    .question__content :is(.section__subheader, .section__header) {
+      text-align: left;
+    }
+
 
     .people__content {
       position: relative;
@@ -962,5 +1062,15 @@ footer {
   .people__image {
     gap: 1.5rem;
     grid-auto-rows: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__container  {
+    text-align: center;
+  }
+
+  .hats__highlights li {
+    text-align: left;
   }
 }
