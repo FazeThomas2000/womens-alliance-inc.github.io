@@ -567,6 +567,15 @@ nav {
     text-align: center;
   }
 
+  .hatsgalore__content .hatsgalore__subheader,
+  .hats__ticket__btn,
+  .hatsgalore__content h3,
+  .hatsgalore__content h2,
+  .hatsgalore__content p {
+  text-align: center;
+  align-items: center;
+  }
+
   .hats__ticket__btn {
     background-color: var(--primary-color);
     color: var(--white);
@@ -934,6 +943,7 @@ footer {
 
     .hatsgalore__image {
       grid-area: 1/2/2/3;
+      align-items: center;
     }
 
     .question__container {
