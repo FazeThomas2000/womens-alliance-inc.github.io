@@ -567,6 +567,11 @@ nav {
     text-align: center;
   }
 
+  .hatsgalore__btn {
+    display: flex;
+    justify-content: center;
+  }
+
   .hatsgalore__content .hatsgalore__subheader,
   .hats__ticket__btn,
   .hatsgalore__content h3,
