@@ -364,7 +364,7 @@ footer {
     }
 
     .nav__logo .logo {
-      color: var(--primary-color);
+      color: #f10e0e;
     }
 
     .nav__links {
@@ -378,7 +378,7 @@ footer {
     }
 
     .nav__links a {
-      color: var(--text-dark);
+      color: var(--white);
     }
 
     .nav__links a:hover {
