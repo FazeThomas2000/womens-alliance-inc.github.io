@@ -552,12 +552,10 @@ nav {
   }
 
   .hatsgalore__content h2 {
-    margin-bottom: 1rem;
-    font-size: 4.75rem;
-    font-weight: 500;
-    line-height: 5.5rem;
-    color: var(--text-dark);
-    text-align: center;
+    font-size: clamp(2rem, 5vw, 4.75rem);
+    line-height: 1.2;
+    font-weight: 600;
+    color: var(--text-dark);  
   }
 
   .hatsgalore__content p {
