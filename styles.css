@@ -947,6 +947,7 @@ footer {
     .hatsgalore__image {
       grid-area: 1/2/2/3;
       align-items: center;
+      padding-top: 1rem;
     }
 
     .question__container {
