@@ -65,6 +65,12 @@ ScrollReveal().reveal(".about__image img", {
     delay: 500,
   });
 
+  ScrollReveal().reveal(".scholar__card", {
+    ...scrollRevealOption,
+    delay: 500,
+  });
+
+
   ScrollReveal().reveal(".hats__image img", {
     ...scrollRevealOption,
     origin: "left",
