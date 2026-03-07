@@ -415,7 +415,10 @@ nav {
   }
 
   .scholar__image img {
+    width: 100%;
     max-width: 675px;
+    height: auto;
+    display: block;
   }
 
   .scholar__content {
