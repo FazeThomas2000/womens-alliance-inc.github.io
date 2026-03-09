@@ -1157,4 +1157,8 @@ footer {
   .hats__highlights li {
     text-align: left;
   }
+
+  .scholar__image::before {
+    border-radius: 2rem;
+  }
 }
