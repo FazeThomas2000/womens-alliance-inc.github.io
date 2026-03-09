@@ -393,9 +393,9 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 
-  .aboutus__card {
-    padding: 5rem 2rem;
-  }
+    .aboutus__card {
+        padding: 5rem 2rem;
+    }
 
     .footer__container {
       flex-direction: row;
