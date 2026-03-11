@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* This file contains the common styles used across the website. It is imported in all the other CSS files. */
 :root{
     --primary-color:#850101;
     --text-dark:#000000;
@@ -12,6 +13,7 @@
     --gradient-2: linear-gradient(to right, #eeb5b5, #e1c2b0, #d87e7e);
 }
 
+/*this star function is for resetting default browser styles*/
 *{
     padding: 0;
     margin: 0;
@@ -37,30 +39,6 @@
   line-height: 1.75rem;
 }
 
-.sectioned__container {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 5rem 1rem;
-}
-
-.sectioned__header {
-  position: relative;
-  isolation: isolate;
-  font-size: 2rem;
-  line-height: 2.75rem;
-  max-width: 400px;
-}
-
-.sectioned__header::before {
-  position: absolute;
-  top: -3rem;
-  width: max-content;
-  font-size: 6rem;
-  font-weight: 800;
-  line-height: 6rem;
-  color: rgba(0, 0, 0, 0.05);
-  z-index: -1;
-}
 
 .section__description {
     font-size: 1.1rem;
@@ -356,44 +334,6 @@ nav {
     grid-area: 7/1/9/3;
   }
 
-  .scholarship__container {
-    position: relative;
-    isolation: isolate;
-    display: grid;
-    overflow: hidden;
-  }
-
-  .scholarship__content {
-    padding: 5rem 1rem;
-  }
-
-  .scholarship__content::before {
-    position: absolute;
-    content: "";
-    background-image: var(--gradient-2);
-    grid-area: 1/1/3/2;
-    inset: 0;
-    z-index: -1;
-  }
-
-  .scholarship__content .sectioned__header {
-    margin-bottom: 1rem;
-    color: var(--white);
-  }
-
-  .scholarship__content .sectioned__header::before {
-    content: "scholarship";
-    color: rgba(255, 255, 255, 0.2);
-  }
-
-  .scholarship__content p {
-    color: var(--white);
-  }
-
-  .scholarship__content p:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-
   .scholar__header {
     padding-top: 5rem;
     display: grid;
@@ -505,52 +445,6 @@ nav {
 
   .scholar__card__content h5 {
     font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--text-light);
-    text-align: center;
-  }
-
-  .award__container {
-    overflow: hidden;
-    margin-bottom: 4rem;
-  }
-
-  .award__container .sectioned__header::before {
-    content: "2025 Awards";
-  }
-
-  .award__grid {
-    margin-top: 4rem;
-    display: grid;
-    gap: 4rem 1rem;
-  }
-
-  .award__card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border-radius: 2rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .award__card h4 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--text-dark);
-    text-align: center;
-  }
-
-  .award__card h3 {
-    font-size: 1.25rem;
-    font-weight: 650;
-    color: var(--text-dark);
-    text-align: center;
-  }
-
-  .award__card p {
     font-weight: 500;
     color: var(--text-light);
     text-align: center;
@@ -911,24 +805,24 @@ footer {
 
 
 @media (width > 768px) {
-    nav {
-      position: static;
-      padding: 2rem 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2rem;
-    }
+  nav {
+    position: static;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
 
-    .nav__header {
-      flex: 1;
-      padding: 0;
-      background-color: transparent;
-    }
+  .nav__header {
+    flex: 1;
+    padding: 0;
+    background-color: transparent;
+  }
 
-    .nav__menu__btn {
-      display: none;
-    }
+  .nav__menu__btn {
+    display: none;
+  }
 
     .nav__logo .logo {
       color: var(--primary-color);
@@ -1028,33 +922,6 @@ footer {
       z-index: 10;
     }
 
-    .scholarship__container {
-      grid-template-columns:
-        minmax(0, 1fr)
-        minmax(0, calc(var(--max-width) / 2))
-        minmax(0, calc(var(--max-width) / 2))
-        minmax(0, 1fr);
-    }
-
-    .scholarship__image {
-      grid-area: 1/1/2/3;
-    }
-
-    .scholarship__image img {
-      height: 100%;
-      object-fit: cover;
-      border-top-right-radius: 8rem;
-      border-bottom-right-radius: 8rem;
-    }
-
-    .scholarship__content {
-      grid-area: 1/3/2/4;
-    }
-
-    .scholarship__content::before {
-      grid-area: 1/2/2/5;
-    }
-
      .scholar__header {
       padding-top: 0;
       grid-template-columns:
@@ -1086,13 +953,9 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 
-    .award__grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .hats__container {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  .hats__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
     .hats__content {
       grid-column: 2/4;
