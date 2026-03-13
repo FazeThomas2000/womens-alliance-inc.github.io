@@ -102,20 +102,20 @@ ScrollReveal().reveal(".about__image img", {
     delay: 1000,
   });
 
-  ScrollReveal().reveal(".bourbon__image img", {
+  ScrollReveal().reveal(".donation__image img", {
     ...scrollRevealOption,
-    origin: "left",
+    origin: "right",
   });
-  ScrollReveal().reveal(".bourbon__content h4", {
+  ScrollReveal().reveal(".donation__content h2", {
     ...scrollRevealOption,
     delay: 500,
   });
-  ScrollReveal().reveal(".bourbon__content p", {
+  ScrollReveal().reveal(".donation__content h1", {
     ...scrollRevealOption,
     delay: 1000,
   });
-  ScrollReveal().reveal(".bourbon__btn", {
+  ScrollReveal().reveal(".donation__content p", {
     ...scrollRevealOption,
     delay: 1500,
-  }); 
+  });
   
