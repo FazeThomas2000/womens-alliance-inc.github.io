@@ -49,6 +49,7 @@ ScrollReveal().reveal(".about__image img", {
 
   const reel = document.querySelector(".gallery__reel .gallery__images");
 
+  if (reel) {
   const reelContent = Array.from(reel.children);
 
   reelContent.forEach((item) => {
@@ -56,6 +57,7 @@ ScrollReveal().reveal(".about__image img", {
     duplicateNode.setAttribute("aria-hidden", true);
     reel.appendChild(duplicateNode);
   });
+}
 
   ScrollReveal().reveal(".scholarship__content .section__header", {
     ...scrollRevealOption,
